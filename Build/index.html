@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Mock Zone - Practice Free. Succeed Fast.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="font-inter bg-gray-50 text-gray-900">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-10 sticky top-0 z-50 border-b-4 border-blue-600">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Website Logo and Tagline -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl font-extrabold text-blue-700 tracking-tight">Free Mock Zone</h1>
+                <p class="text-md text-gray-600 italic">Practice Free. Succeed Fast.</p>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                class="md:hidden text-gray-700 focus:outline-none p-2 rounded-md hover:bg-gray-200 transition-colors duration-300">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navigation Bar -->
+            <nav id="main-nav" class="hidden md:flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 w-full md:w-auto">
+                <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 w-full md:w-auto">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+
+                    <!-- UPSC Dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="nav-link flex items-center justify-between">
+                            UPSC
+                            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <ul
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 md:w-56 mt-2 z-10 border border-gray-200">
+                            <li class="relative group-submenu">
+                                <a href="#" class="dropdown-item flex items-center justify-between">
+                                    GS Prelims
+                                    <svg class="ml-1 w-4 h-4 transform group-hover-submenu:rotate-180 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <!-- Nested GS Prelims Subjects Dropdown -->
+                                <ul
+                                    class="absolute group-hover-submenu:block bg-white shadow-lg rounded-lg py-2 w-48 z-10 border border-gray-200">
+                                    <li><a href="#" class="dropdown-item">History (Ancient, Medieval, Modern)</a></li>
+                                    <li><a href="#" class="dropdown-item">Geography (Indian, World, Physical)</a></li>
+                                    <li><a href="#" class="dropdown-item">Indian Polity</a></li>
+                                    <li><a href="#" class="dropdown-item">Economy</a></li>
+                                    <li><a href="#" class="dropdown-item">Environment & Ecology</a></li>
+                                    <li><a href="#" class="dropdown-item">Science & Technology</a></li>
+                                    <li><a href="#" class="dropdown-item">Current Affairs</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dropdown-item">CSAT Mocks</a></li>
+                            <li><a href="#" class="dropdown-item">Mains</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- SSC Dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="nav-link flex items-center justify-between">
+                            SSC
+                            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <ul
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-40 mt-2 z-10 border border-gray-200">
+                            <li><a href="#" class="dropdown-item">MTS</a></li>
+                            <li><a href="#" class="dropdown-item">CHSL</a></li>
+                            <li><a href="#" class="dropdown-item">CGL</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Banking Dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="nav-link flex items-center justify-between">
+                            Banking
+                            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <ul
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-2 z-10 border border-gray-200">
+                            <li><a href="#" class="dropdown-item">IBPS PO</a></li>
+                            <li><a href="#" class="dropdown-item">IBPS RRB PO</a></li>
+                            <li><a href="#" class="dropdown-item">SBI PO</a></li>
+                            <li><a href="#" class="dropdown-item">IBPS Clerk</a></li>
+                            <li><a href="#" class="dropdown-item">SBI Clerk</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#about-us" class="nav-link">About Us</a></li>
+                    <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Hero Section (New) -->
+        <section
+            class="bg-blue-600 text-white rounded-xl shadow-xl p-8 md:p-12 text-center mb-10 transform transition-transform duration-500 hover:scale-105">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Your Path to Success Starts Here!</h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-6 max-w-3xl mx-auto">
+                Access premium quality mock tests for UPSC, SSC, Banking, and more. All 100% free.
+            </p>
+            <a href="#recent-posts"
+                class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Explore Free Tests
+            </a>
+        </section>
+
+        <!-- Recent Posts Section -->
+        <section id="recent-posts" class="bg-white rounded-xl shadow-lg p-6 mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 border-b-2 border-blue-200 pb-3">Recent Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+               
+               <!-- Demo Post 1 - Clickable -->
+                <a href="file:///C:/Users/Ankit/Downloads/Web%20Development/HTML/Free-Mock-Zone/Main/History-UPSC-CSE-Prelims-Syllabus.html"
+                    class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Syllabus for UPSC History Prelims</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">A comprehensive guide to the History syllabus for
+                        UPSC Civil Services Prelims examination.</p>
+                </a>
+                <!-- Demo Post 2 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Syllabus for UPSC History Optional</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Detailed syllabus for the History Optional
+                        subject in UPSC Civil Services Mains examination.</p>
+                </a>
+                <!-- Demo Post 3 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">SSC CGL Tier 1 Exam Pattern</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Understanding the exam pattern for SSC CGL Tier
+                        1, including subjects and marking scheme.</p>
+                </a>
+                <!-- Demo Post 4 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Banking Awareness for IBPS PO</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Key banking awareness topics essential for the
+                        IBPS PO examination.</p>
+                </a>
+                <!-- Demo Post 5 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Current Affairs Monthly Digest: July 2025</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Stay updated with the most important current
+                        affairs of July 2025 for all competitive exams.</p>
+                </a>
+                <!-- Demo Post 6 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Tips to Crack CSAT in UPSC Prelims</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Effective strategies and tips to score well in
+                        the CSAT paper of UPSC Prelims.</p>
+                </a>
+                <!-- Demo Post 7 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Quantitative Aptitude for SSC MTS</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Important topics and practice questions for
+                        Quantitative Aptitude section of SSC MTS.</p>
+                </a>
+                <!-- Demo Post 8 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">English Language for SBI Clerk</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Improve your English language skills for the SBI
+                        Clerk examination with these tips.</p>
+                </a>
+                <!-- Demo Post 9 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Reasoning Ability for IBPS RRB PO</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Master reasoning ability for IBPS RRB PO with
+                        these essential concepts and practice sets.</p>
+                </a>
+                <!-- Demo Post 10 - Clickable -->
+                <a href="#" class="post-card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">General Studies for UPSC Prelims: Environment
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Key topics and study material for the Environment
+                        and Ecology section of UPSC GS Prelims.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Stats Area -->
+        <section id="stats" class="bg-blue-700 text-white rounded-xl shadow-xl p-8 md:p-12 mb-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Our Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="p-6 bg-blue-600 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold mb-2">12000+</p>
+                    <p class="text-lg text-blue-100">Total Tests Taken</p>
+                </div>
+                <div
+                    class="p-6 bg-blue-600 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold mb-2">1000+</p>
+                    <p class="text-lg text-blue-100">Total Aspirants</p>
+                </div>
+                <div
+                    class="p-6 bg-blue-600 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold mb-2">300+</p>
+                    <p class="text-lg text-blue-100">Total Tests Available</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="bg-white rounded-xl shadow-lg p-6 mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 border-b-2 border-blue-200 pb-3">About Us</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                At Free Mock Zone, we are passionately committed to empowering every aspirant on their journey to
+                success.
+                We believe that high-quality practice should be accessible to all, which is why we provide 100% free
+                mock tests
+                designed with premium quality content and an interface that simulates the real examination environment.
+                Our mission is to help you practice effectively, identify your strengths and weaknesses, and ultimately,
+                succeed fast in your competitive exams.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="bg-white rounded-xl shadow-lg p-6 mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 border-b-2 border-blue-200 pb-3">Contact Us</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                For any inquiries, support, or feedback, please feel free to reach out to us.
+                You can email us at <a href="mailto:info@freemockzone.com"
+                    class="text-blue-600 hover:underline font-medium">info@freemockzone.com</a>
+                or call us at <a href="tel:+911234567890"
+                    class="text-blue-600 hover:underline font-medium">+91-1234567890</a>.
+                Our team is dedicated to assisting you and will get back to you as soon as possible.
+                We are located at 123 Mock Test Street, Exam City, State - 123456.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-8 px-6 md:px-10 text-center">
+        <div class="container mx-auto">
+            <p class="mb-2">&copy; 2025 Free Mock Zone. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-2">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
